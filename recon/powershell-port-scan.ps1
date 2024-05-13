@@ -1,0 +1,1 @@
+22,80,8080,443,3389|%{"$_ - "+([Net.Sockets.TcpClient]::new()).ConnectAsync("wp.pl", $_).Wait(1000)}2>$null
